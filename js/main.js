@@ -1,1 +1,5 @@
 var app = angular.module('myAngularApp', []);
+app.controller('mainController', function($scope) {
+  $scope.firstName= "John";
+  $scope.lastName= "Doe";
+});
