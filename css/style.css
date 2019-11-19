@@ -1,0 +1,8 @@
+nav {
+  background-color: beige;
+}
+nav a {
+  padding: 30px;
+  text-decoration: none;
+  position: fixed;
+}
