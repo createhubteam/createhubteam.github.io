@@ -1,5 +1,4 @@
 var app = angular.module('myAngularApp', []);
 app.controller('mainController', function($scope) {
-  $scope.firstName= "John";
-  $scope.lastName= "Doe";
+  $scope.homePageMsg = "Welcome to Basics of CSE!!!";
 });
