@@ -5,6 +5,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
 <body>
-  <div ng-app="myAngularApp" ng-controller="mainController">{{firstName + " " + lastName}}</div>
+  <div ng-app="myAngularApp" ng-controller="mainController">
+    {{firstName + " " + lastName}}
+    <nav>
+      <ul>
+        <li>Sort</li>
+        <li>Search</li>
+      </ul>
+    </nav>
+  </div>
 </body>
 </html>
