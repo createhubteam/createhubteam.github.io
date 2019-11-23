@@ -14,12 +14,11 @@
 </head>
 <body>
   <div ng-app="myAngularApp" ng-controller="mainController">
-    <div ng-view>
-      <nav>
+    <nav>
         <a href="/sort.html">Sort</a>
         <a href="/search.html">Search</a>
-      </nav>
-    </div>
+    </nav>
+    <div ng-view></div>
     <div id="content">
       <span>{{homePageMsg}}<span>
     </div>
