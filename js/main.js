@@ -2,7 +2,7 @@ var app = angular.module('myAngularApp', ["ngRoute"]);
 
 app.config(function($routeProvider) {
   $routeProvider
-  .when("/", {
+  .when("/index", {
     templateUrl : "linesorter.html"
   })
   .when("/sort", {
