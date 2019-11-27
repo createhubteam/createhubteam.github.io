@@ -6,8 +6,8 @@
         <p>Select sorting method</p>
       </div>
       <div class="col-md-6">
-        <input type="range" min="1" max="100" value="50">
-        <select>
+        <input ng-model="values" type="range" min="1" max="100" value="50">
+        <select ng-model="sortMethod">
           <option>Selection Sort</option>
           <option>Insertion Sort</option>
           <option>Quick Sort</option>
@@ -18,10 +18,10 @@
     </div>
     <div class="row">
       <div class="col-md-6">
-        <input type="button" name="Sort" />
+        <input type="button" value="Sort" onclick="selectionSort()" />
       </div>
       <div class="col-md-6">
-        <input type="button" name="Stop" />
+        <input type="button" value="Stop" onclick="" />
       </div>
     </div>
   </div>
