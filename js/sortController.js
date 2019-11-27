@@ -1,4 +1,5 @@
 app.controller('sortController', function($scope) {
+      $scope.test= "test";
       $scope.swap = function(num1, num2) {
         var temp = num1;
         num1=num2;
