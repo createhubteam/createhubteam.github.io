@@ -11,16 +11,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
   <link rel="stylesheet" type="text/css" href="../css/style.css">
-  <script src="../mainController.js></script>
+  <script src="../main.js></script>
 </head>
 <body>
-  <div ng-app="myAngularApp" ng-controller="mainController">
+  <div ng-app="myAngularApp"> <!-- ng-controller="mainController" -->
     <nav>
         <a href="../sort">Sort</a>
         <a href="../search">Search</a>
     </nav>
-    <div ng-view></div>
-    <div> Hey</div>
+    <div ng-view></div>    
   </div>
 </body>
 </html>
