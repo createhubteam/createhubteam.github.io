@@ -1,7 +1,7 @@
 var app = angular.module('myAngularApp', ["ngRoute"]);
 
 app.config(function($routeProvider) {
-  $routeProvider.when("/linesorter.html", {
+  $routeProvider.when("/index", {
     templateUrl : "linesorter.html",
     controller: "mainController"
   })
