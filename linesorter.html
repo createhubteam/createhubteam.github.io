@@ -4,6 +4,8 @@
     <title>Basic CSE</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  </head>
+  <body ng-app="myAngularApp">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
@@ -12,13 +14,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <script src="../js/main.js"></script>
-  </head>
-  <body>
-    <div ng-app="myAngularApp"> 
+
       <nav>
           <a ng-href="sort">Sort</a>
           <a ng-href="search">Search</a>
       </nav>
+    December
       <div ng-view></div>
       <footer>
         <nav>
@@ -29,6 +30,6 @@
           </p>
         </nav>
       </footer> 
-    </div>
+
   </body>
 </html>
