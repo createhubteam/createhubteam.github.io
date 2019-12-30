@@ -2,19 +2,19 @@ var app = angular.module('myAngularApp', ["ngRoute"]);
 
 app.config(function($routeProvider) {
   $routeProvider.when("/linesorter.html", {
-    templateUrl : "../linesorter.html",
+    templateUrl : "linesorter.html",
     controller: "mainController"
   })
   .when("/sort", {
-    templateUrl : "../sort.html",
+    templateUrl : "sort.html",
     controller: "sortController"
   })
 });
 
-app.controller('mainController', function($scope) {
+app.controller('mainController', function($scope, $route) {
   $scope.homePageMsg = "Welcome to Basics of CSE!!!";
 });
-app.controller('sortController', function($scope) { alert("hi");
+app.controller('sortController', function($scope, $route) { alert("hi");
       $scope.test= "test";
       $scope.swap = function(num1, num2) {
         var temp = num1;
