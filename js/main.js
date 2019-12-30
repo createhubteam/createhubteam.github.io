@@ -6,7 +6,7 @@ app.config(function($routeProvider) {
     controller: "mainController"
   })
   .when("/sort", {
-    templateUrl : "sort.html",
+    templateUrl : "/sort.html",
     controller: "sortController"
   })
 });
@@ -24,7 +24,7 @@ app.controller('sortController', function($scope) { alert("hi");
       }
 
       $scope.selectionSort = function() { alert("sort");
-        var Arr = $scope.values;
+        /*var Arr = $scope.values;
         var mn = 0;
         var len = Arr.length;
         for(var i =0;i<len-1;i++){
@@ -34,7 +34,7 @@ app.controller('sortController', function($scope) { alert("hi");
               mn=j;
           }
           [Arr[i], Arr[mn]]= $scope.swap(Arr[i], Arr[mn]);
-        }
+        }*/
       }
-  }
+
 });
