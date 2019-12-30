@@ -1,1 +1,33 @@
-<h3>Sorting technique</h3>
+<div ng-controller="sortController">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>Select a range to sort</p>
+        <p>Select sorting method</p>
+        <p> {{test}}</p>
+      </div>
+      <div class="col-md-6">
+        <input ng-model="values" type="range" min="1" max="100" value="50">
+        <select ng-model="sortMethod">
+          <option>Selection Sort</option>
+          <option>Insertion Sort</option>
+          <option>Quick Sort</option>
+          <option>Merge Sort</option>
+          <option>Bubble Sort</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12"><h3>Sorting technique</h3>
+</div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <input type="button" value="Sort" onclick="selectionSort()" />
+      </div>
+      <div class="col-md-6">
+        <input type="button" value="Stop" onclick="" />
+      </div>
+    </div>
+  </div>
+</div> 
